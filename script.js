@@ -48,7 +48,8 @@ document.querySelectorAll('.counter').forEach(counter => {
 
 // Form submission handler with enhanced animations
 document.getElementById('contributorForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+    // Allow Netlify to handle form submission
+    // e.preventDefault(); // Commented out for Netlify
     
     // Get form data
     const formData = {
